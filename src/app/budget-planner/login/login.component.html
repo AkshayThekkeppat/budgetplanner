@@ -1,0 +1,35 @@
+<section style="background-image:url('stock-vector-widescreen-abstract-financial-chart-with-uptrend-line-graph-and-candlestick-on-black-and-white-1684808446.jpg');height: 100%;background-size: cover;
+background-repeat: no-repeat;
+background-position: center;">
+<h1>BUDGET PLANNER</h1>
+
+    <form *ngIf="activeForm === 'login'" >
+    <div>
+        <h3>Login</h3>
+        <input type="email" placeholder="Enter your email" style="width: 300px;height:25px; font-family: 'Times New Roman', Times, serif;"> <br><br>
+        <input type="password" placeholder="Enter your password" style="width: 300px;height:25px; font-family: 'Times New Roman', Times, serif;">
+        
+        </div>
+        <section style="padding-bottom: 200px;">
+        <button  routerLink="dashboard" routerLinkActive="active" (click)="dashboard()"  type="submit"  style="background-color: darkblue; color: white; width: 300px; height: 30px;margin-left: 602px;text-decoration: none; font-family: 'Times New Roman', Times, serif;">Login</button>
+        <p (click)="toggleForm('register')" style="margin-left: 602px; font-family: 'Times New Roman', Times, serif;">Don't have an account? 
+        <span class="highlighted">Register</span></p></section>
+        
+    </form>
+
+<form *ngIf="activeForm === 'register'">
+<div>
+  <h3>Register</h3>
+  <input type="text" placeholder="Enter your username" style="width: 300px;height:25px; font-family: 'Times New Roman', Times, serif;"> <br> <br>
+  <input type="email" placeholder="Enter your email" style="width: 300px;height:25px; font-family: 'Times New Roman', Times, serif;"> <br><br>
+  <input type="password" placeholder="Enter your password" style="width: 300px;height:25px; font-family: 'Times New Roman', Times, serif;"> 
+  
+</div>
+<button  type="submit"(click)="toggleForm('login')" style="background-color: darkblue; color: white; width: 300px; height: 30px;  margin-left: 602px; text-decoration: none; font-family: 'Times New Roman', Times, serif;">Register</button>
+  <p (click)="toggleForm('login')" style="margin-left: 602px; font-family: 'Times New Roman', Times, serif;">Already have an account? 
+  <span class="highlighted" >Login</span></p>
+
+</form>
+
+
+</section>

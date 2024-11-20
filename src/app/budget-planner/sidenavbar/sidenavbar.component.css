@@ -1,0 +1,98 @@
+.navbar{
+    background-color: darkblue;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+  }
+  
+  .toggle-button-row{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 58px;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 2px 4px rgba(0,0,0,2);
+  }
+  
+  .toggle-button-row mat-icon{
+    font-size: 24px;
+    color: darkblue;
+  }
+  .edit-col{
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  
+  .edit-col:hover{
+    color: darkblue;
+  }
+  
+  .slide-out-panel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: linear-gradient(135deg,darkblue,skyblue);
+    transition: transform 0.3s ease-out;
+    z-index: 1000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,3);
+  }
+  
+  .slide-out-panel.slide-out{
+    transform: translate(-100%);
+  }
+  .slide-out-content{
+    margin-top: 80px;
+    padding: 20px;
+  }
+  .nav{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+   
+    color: white;
+  }
+  h2{
+    color: white;
+    height: 70px;
+    width: 100%;
+    background-color: darkblue
+    ;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 4px 4px 0 black;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h3{
+    color: white;
+    height: 70px;
+    width: 100%;
+    
+    ;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 4px 4px 0 black;
+    font-family: 'Times New Roman', Times, serif;
+  }

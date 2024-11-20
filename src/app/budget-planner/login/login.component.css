@@ -1,0 +1,43 @@
+h1{
+    color: white;
+    height: 70px;
+    width: 100%;
+    background-color: darkblue
+    ;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 4px 4px 0 black;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  div{
+    height: 240px;
+    width: 270px;
+    
+    padding-left: 600px;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h3{
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  p .highlighted {
+    color:darkblue;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+  }
+  
+  p .highlighted:hover {
+    color:black;
+  }
+  

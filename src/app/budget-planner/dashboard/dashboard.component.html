@@ -1,0 +1,96 @@
+
+
+
+<app-sidenavbar></app-sidenavbar>
+<div class="container">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Income</h1>
+
+            </div>
+            <hr>
+            <div class="income-details">
+                <h2>Last Few Income</h2>
+                <ul>
+                    <li *ngFor="let monthIncome of lastMonthIncome">{{monthIncome}}</li>
+                </ul>
+
+            </div>
+            <div class="month">
+                <h3>Current Month</h3>
+                <p>{{currentMonthIncome}}</p>
+
+            </div>
+            <button class="button">View</button>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Expense</h1>
+
+            </div>
+            <hr>
+            <div class="income-details">
+                <h2>Last Few Expense</h2>
+                <ul>
+                    <li *ngFor="let monthExpense of lastMonthExpense">{{monthExpense}}</li>
+                </ul>
+
+            </div>
+            <div class="month">
+                <h3>Current Month</h3>
+                <p>{{currentMonthExpense}}</p>
+
+            </div>
+            <button class="button">View</button>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <h1>To Do Transactions</h1>
+
+            </div>
+            <hr>
+            <div class="income-details">
+                <h2>Last Few Months</h2>
+                <ul>
+                    <li *ngFor="let transaction of todoTransactions">{{transaction.description}}</li>
+                </ul>
+
+
+            </div>
+
+            <button class="button">View</button>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Total Income</h1>
+
+            </div>
+            <hr>
+            <div class="income-details">
+
+
+
+            </div>
+            <div class="month">
+                <h3>Current Month income</h3>
+                <p>{{totalCurrentMonthIncome}}</p>
+
+            </div>
+            <div class="month">
+                <h3>Current Month Expense</h3>
+                <p>{{totalCurrentMonthExpense}}</p>
+
+            </div>
+            <button class="button">View</button>
+        </div>
+    </div>
+</div>
+
+
